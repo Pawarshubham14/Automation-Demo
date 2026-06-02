@@ -110,5 +110,22 @@ public class LoginPage {
 	
 	@FindBy(xpath = "/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/form[1]/button[1]")
 	public WebElement create_accout;
+	
+	@FindBy(xpath ="/html/body/section/div/div/div[1]/div/form/input[2]")
+	public WebElement email1;
+	
+	public void getemail1(String setemail) {
+		email1.sendKeys(setemail);
+	}
+	
+	@FindBy(xpath ="/html/body/section/div/div/div[1]/div/form/input[3]")
+	public WebElement pass1;
+	
+	public void getpass(String setpass) {
+		pass1.sendKeys(setpass);
+	}
+	
+	@FindBy(xpath ="/html/body/section/div/div/div[1]/div/form/button")
+	public WebElement login_button;
 
 }

@@ -43,7 +43,7 @@ public class Register_User extends BaseTest {
 		WebElement signup = driver.findElement(By.xpath("/html/body/section/div/div/div[3]/div/form/button"));
 		FileReaderUtil file = new FileReaderUtil();
 		String username = file.getUsername();
-		String email = file.getPassword();
+		String email = file.getEmail();
 		name.sendKeys(username);
 		email1.sendKeys(email);
 		signup.click();
@@ -86,21 +86,21 @@ public class Register_User extends BaseTest {
 		String s1 = elements.first_name.getText();
 		System.out.println(s1);
 		String last_name = file.getlastname();
-		elements.first_name.sendKeys(last_name);
+		elements.last_name.sendKeys(last_name);
 		String company = file.getcompany();
-		elements.first_name.sendKeys(company);
+		elements.company.sendKeys(company);
 		String adress = file.getadress();
-		elements.first_name.sendKeys(adress);
+		elements.address1.sendKeys(adress);
 		String adress1 = file.getadress1();
-		elements.first_name.sendKeys(adress1);
+		elements.address2.sendKeys(adress1);
 		String state = file.getstate();
-		elements.first_name.sendKeys(state);
+		elements.state.sendKeys(state);
 		String city = file.getcity();
-		elements.first_name.sendKeys(city);
+		elements.city.sendKeys(city);
 		String zip = file.getpin();
-		elements.first_name.sendKeys(zip);
+		elements.zipcode.sendKeys(zip);
 		String mobile = file.getmobilenumber();
-		elements.first_name.sendKeys(mobile);
+		elements.mobile_number.sendKeys(mobile);
 		elements.create_accout.click();
 
 	}
