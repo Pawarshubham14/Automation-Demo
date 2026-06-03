@@ -44,6 +44,7 @@ public class Test_Case2 extends BaseTest {
 		}else {
 			System.out.println("test fail");
 		}
+		System.out.println("Test 2 pass");
 				
 		
 		

@@ -102,6 +102,7 @@ public class Register_User extends BaseTest {
 		String mobile = file.getmobilenumber();
 		elements.mobile_number.sendKeys(mobile);
 		elements.create_accout.click();
+		System.out.println("Test 1 pass");
 
 	}
 }

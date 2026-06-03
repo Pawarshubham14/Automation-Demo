@@ -7,6 +7,9 @@
         <class name="tests.Register_User"/>
         <class name="tests.TestBrowser"/>
         <class name="tests.Test_Case2"/>
+        <class name="tests.Test_case3"/>
+        <class name="tests.Test_case4"/>
+        <class name="tests.Test_case5"/>
             
         </classes>
 
