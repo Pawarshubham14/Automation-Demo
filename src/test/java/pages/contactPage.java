@@ -28,15 +28,23 @@ public class contactPage{
 	@FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div/div[3]/form/div[3]/input")
 	public WebElement Subject;
 	
-	public void getsubject(String sub) {
-		Subject.sendKeys(sub);
+	public void getsubject(String subject1) {
+		Subject.sendKeys(subject1);
 	}
 	
 	@FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div/div[3]/form/div[4]/textarea")
 	public WebElement Description;
 	
+	public void getdiscription(String discription) {
+		Subject.sendKeys(discription);
+	}
+	
 	@FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div/div[3]/form/div[5]/input")
 	public WebElement UploadFile;
+	
+	public void setUpladpath(String path) {
+		UploadFile.sendKeys(path);
+	}
 	
 	@FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div/div[3]/form/div[6]/input")
 	public WebElement Submit;

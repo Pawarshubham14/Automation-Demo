@@ -19,6 +19,12 @@ public class Test_case6 extends BaseTest{
 		FileReaderUtil File = new FileReaderUtil();
 		String name = File.getUsername();
 		c.getName(name);
+        String email = File.getEmail();
+        c.getEmail(email);
+        c.getsubject("Text to be entered");
+        c.getdiscription("Text add");
+        c.setUpladpath("D:\\Shubham Pawar (1).pdf");
+        c.Submit.click();
 	}
 
 }
