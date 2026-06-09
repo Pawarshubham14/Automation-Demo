@@ -19,7 +19,17 @@ public class Test_case8 extends BaseTest {
 		}else {
 			System.out.println("Test fail");
 		}
-		
+		WebElement view_product = driver.findElement(By.xpath("/html/body/section[2]/div[1]/div/div[2]/div/div[2]/div/div[2]/ul/li/a"));
+		view_product.click();
+		WebElement name = driver.findElement(By.xpath("/html/body/section/div/div/div[2]/div[2]/div[2]/div/h2"));
+		WebElement brand = driver.findElement(By.xpath("/html/body/section/div/div/div[2]/div[2]/div[2]/div/p[4]"));
+		WebElement cat = driver.findElement(By.xpath("/html/body/section/div/div/div[2]/div[2]/div[2]/div/p[1]"));
+		String n = name.getText();
+		System.out.println("Product name" + " " +n);
+		String b = brand.getText();
+		System.out.println("Brand name" + " " +b);
+		String c = cat.getText();
+		System.out.println("category name" + " " +c);
 	}
 
 }

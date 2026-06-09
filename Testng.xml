@@ -10,6 +10,10 @@
         <class name="tests.Test_case3"/>
         <class name="tests.Test_case4"/>
         <class name="tests.Test_case5"/>
+        <class name="tests.Test_Case6"/>
+        <class name="tests.Test_case7"/>
+        <class name="tests.Test_case8"/>
+        <class name="tests.Test_case9"/>
             
         </classes>
 
