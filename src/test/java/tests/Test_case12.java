@@ -49,6 +49,14 @@ public class Test_case12 extends BaseTest {
 	}
 	List<WebElement> productinfo = driver.findElements(By.xpath("//div[@id='cart_info']"));
 	Assert.assertEquals(productinfo.size(), 2);
-	
+	List<WebElement> prices = driver.findElements(By.xpath("//td[@class='cart_price']/p"));
+	List<WebElement> quantities = driver.findElements(By.xpath("//td[@class='cart_quantity']/button"));
+	List<WebElement> totals = driver.findElements(By.xpath("//td[@class='cart_total']/p"));
+
+	for(int i = 0; i < prices.size(); i++) {
+	    System.out.println("Price: " + prices.get(i).getText());
+	    System.out.println("Quantity: " + quantities.get(i).getText());
+	    System.out.println("Total: " + totals.get(i).getText());
+	}
 }
 }
